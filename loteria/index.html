@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lotería Mexicana — Gritón y Tablas Digitales</title>
+  <meta name="description" content="Lotería Mexicana moderna para Android e iOS: gritón automático y manual con Cover Flow 3D, tablas digitales con frijoles, 9 temas mexicanos, 100% sin internet y sin anuncios." />
+  <link rel="canonical" href="https://marcocarrizales.com/loteria/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lotería Mexicana — Gritón y Tablas Digitales" />
+  <meta property="og:description" content="Barajeo automático de 54 cartas, voz cantada, tablas digitales y 9 temas modernos inspirados en México. Gratis, sin anuncios y 100% offline." />
+  <meta property="og:image" content="https://marcocarrizales.com/loteria/assets/favicon/android-chrome-512x512.png" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#c83e2b" />
+  <meta name="theme-color" content="#faf6ee" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#inicio">
+        <img src="assets/favicon/android-chrome-192x192.png" alt="El Gallo — Lotería Mexicana" />
+        <span>Lotería Mexicana</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#caracteristicas" data-i18n="nav_features">Características</a>
+        <a href="#diseno" data-i18n="nav_craft">Diseño y temas</a>
+        <a href="privacy.html" data-i18n="nav_privacy">Privacidad</a>
+      </nav>
+
+      <div class="lang-toggle" role="group" aria-label="Idioma">
+        <button type="button" id="btn-es" class="active" onclick="setLang('es')">ES</button>
+        <button type="button" id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow" data-i18n="eyebrow">Android &amp; iOS · 100% Offline · Sin anuncios</div>
+          <h1 data-i18n="hero_title">Tu gritón y tus tablas, siempre listos en la mesa.</h1>
+          <p class="hero-lead" data-i18n="hero_lead">
+            Barajeo tradicional de las 54 cartas con voz cantada, Cover Flow 3D y tablas digitales. Conéctala a una bocina, apaga la pantalla y disfruta la partida sin interrupciones.
+          </p>
+          <p class="hero-quote" data-i18n="hero_quote">
+            “La lotería es parte de la cultura popular mexicana ya que refleja nuestras costumbres, creencias y tradiciones.”
+          </p>
+
+          <div class="store-row">
+            <a class="store-btn" href="#contacto" aria-label="Google Play Próximamente">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M3.6 2.3c-.4.4-.6 1-.6 1.7v16c0 .7.2 1.3.6 1.7l.1.1 9-9v-.2l-9-9-.1.1zm12 12.1-3-3v-.2l3-3 .1.1 3.6 2c1 .6 1 1.5 0 2.1l-3.6 2-.1 0zm-2.9-2.8-9.2 9.2c.4.4 1.1.5 1.9.1l10.2-5.8-2.9-3.5zm0-2.9 2.9-3.5L5.4 1.4C4.6 1 3.9 1.1 3.5 1.5l9.2 7.2z"/>
+              </svg>
+              <span>
+                <small data-i18n="coming_soon">Próximamente en</small>
+                <strong>Google Play</strong>
+              </span>
+            </a>
+
+            <a class="store-btn secondary" href="#contacto" aria-label="App Store Próximamente">
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.7 19.5c-.8 1.2-1.7 2.4-3 2.4-1.3 0-1.7-.8-3.2-.8-1.5 0-2 .8-3.2.8-1.3 0-2.2-1.3-3-2.5C4.5 16.9 3.6 12.6 5.2 9.8c.8-1.4 2.2-2.3 3.7-2.3 1.2 0 2.3.8 3 .8.7 0 2-.9 3.4-.8.6 0 2.2.2 3.3 1.8-.1.1-2 1.2-2 3.5 0 2.8 2.4 3.7 2.4 3.7-.1.2-.4 1.3-1.3 3zM15.4 5.5c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-.9 2.9 1 .1 2-.5 2.6-1.3z"/>
+              </svg>
+              <span>
+                <small data-i18n="coming_soon">Próximamente en</small>
+                <strong>App Store</strong>
+              </span>
+            </a>
+          </div>
+
+          <div class="hero-pills">
+            <span data-i18n="pill_offline">Funciona sin internet</span>
+            <span data-i18n="pill_screenoff">Audio con pantalla apagada</span>
+            <span data-i18n="pill_free">Gratis y sin publicidad</span>
+          </div>
+        </div>
+
+        <!-- Static Editorial Cover Flow Composition -->
+        <div class="static-showcase" aria-hidden="true">
+          <div class="card-fan">
+            <div class="loteria-card left">
+              <img src="assets/cards/c04.webp" alt="El Catrín" />
+            </div>
+            <div class="loteria-card center">
+              <img src="assets/cards/c01.webp" alt="El Gallo" />
+            </div>
+            <div class="loteria-card right">
+              <div class="card-back-inner">
+                <div class="card-back-lattice">
+                  <div class="card-back-medallion">
+                    <img src="assets/favicon/android-chrome-192x192.png" alt="" />
+                  </div>
+                  <span class="card-back-word">LOTERÍA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="caracteristicas">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="feat_heading">Hecha para jugar como en casa, con cuidado en cada detalle</h2>
+          <p data-i18n="feat_sub">Diseñada desde cero para reuniones familiares: rápida de operar sobre la mesa, legible a distancia y respetuosa con tu privacidad.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🎙️</div>
+            <h3 data-i18n="f1_title">Gritón automático y manual</h3>
+            <p data-i18n="f1_body">Barajea las 54 cartas sin repeticiones. Ajusta el ritmo de 2.5s a 15s o cambia a modo Manual; la app siempre termina de cantar cada carta antes de iniciar la cuenta regresiva.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🔇</div>
+            <h3 data-i18n="f2_title">Modo silencio y verificación rápida</h3>
+            <p data-i18n="f2_body">Silencia la voz al instante cuando alguien en la mesa quiere gritar las cartas. Si alguien grita “¡Lotería!”, abre la cuadrícula ordenada del #1 al #54 para verificar en segundos.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🌙</div>
+            <h3 data-i18n="f3_title">Offline y con pantalla apagada</h3>
+            <p data-i18n="f3_body">No requiere internet ni cuentas. Continúa cantando cartas con la pantalla bloqueada y guarda tu partida automáticamente si cierras la app por accidente.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🫘</div>
+            <h3 data-i18n="f4_title">Tablas digitales con marcadores reales</h3>
+            <p data-i18n="f4_body">Genera de 1 a 4 tablas aleatorias de 4×4 y márcalas manualmente con frijoles, corcholatas, piedritas o monedas de 10¢ mientras el gritón sigue corriendo.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">📱</div>
+            <h3 data-i18n="f5_title">Adaptada a cualquier pantalla</h3>
+            <p data-i18n="f5_body">Pensada para teléfonos, dispositivos plegables, tablets y ventanas redimensionables — incluyendo vista dividida de Baraja y Tablas en pantallas grandes.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🇲🇽</div>
+            <h3 data-i18n="f6_title">Español, English y Bilingüe</h3>
+            <p data-i18n="f6_body">Ideal para familias y reuniones bilingües: canta las cartas en español tradicional, en inglés o en modo bilingüe directamente desde Ajustes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="diseno">
+      <div class="container">
+        <div class="craft-band">
+          <div>
+            <h2 style="margin:0 0 0.65rem; font-family:var(--font-serif); font-size:clamp(1.65rem,2.6vw,2.15rem); line-height:1.15;" data-i18n="craft_title">
+              9 temas inspirados en México y 4 marcadores tradicionales
+            </h2>
+            <p style="margin:0; color:var(--text-muted);" data-i18n="craft_body">
+              De Papel de Algodón y Barragán hasta Barro Negro, Talavera y Cempasúchil. La interfaz se mantiene limpia y moderna para que el arte clásico de las cartas y tus tablas sean siempre los protagonistas.
+            </p>
+
+            <div class="craft-list" aria-label="Temas incluidos">
+              <span class="craft-chip"><span class="swatch-dot" style="background:#efe6d6"></span>Papel de Algodón</span>
+              <span class="craft-chip"><span class="swatch-dot" style="background:#d81e5b"></span>Barragán</span>
+              <span class="craft-chip"><span class="swatch-dot" style="background:#255f4d"></span>Agave y Cal</span>
+              <span class="craft-chip"><span class="swatch-dot" style="background:#1b4b8a"></span>Talavera</span>
+              <span class="craft-chip"><span class="swatch-dot" style="background:#dfd1ba"></span>Mesa de Roble</span>
+              <span class="craft-chip"><span class="swatch-dot" style="background:#1c1a18"></span>Noche Moderna</span>
+              <span class="craft-chip"><span class="swatch-dot" style="background:#19362c"></span>Verde Botánico</span>
+              <span class="craft-chip"><span class="swatch-dot" style="background:#d6824b"></span>Barro Negro</span>
+              <span class="craft-chip"><span class="swatch-dot" style="background:#f2a922"></span>Cempasúchil</span>
+            </div>
+
+            <div class="craft-list" aria-label="Marcadores incluidos">
+              <span class="craft-chip">🫘 Frijol</span>
+              <span class="craft-chip">🍾 Corcholata</span>
+              <span class="craft-chip">🪨 Piedrita</span>
+              <span class="craft-chip">🪙 Moneda 10¢</span>
+            </div>
+          </div>
+
+          <!-- Static 4x4 Tabla Illustration -->
+          <div class="static-tabla-wrap" aria-hidden="true">
+            <div class="static-tabla">
+              <div class="static-tabla-cell marked"><img src="assets/cards/c01.webp" alt="" /><span class="bean-dot"></span></div>
+              <div class="static-tabla-cell"><img src="assets/cards/c04.webp" alt="" /></div>
+              <div class="static-tabla-cell"><img src="assets/cards/c06.webp" alt="" /></div>
+              <div class="static-tabla-cell"><img src="assets/cards/c14.webp" alt="" /></div>
+              <div class="static-tabla-cell"><img src="assets/cards/c23.webp" alt="" /></div>
+              <div class="static-tabla-cell marked"><img src="assets/cards/c27.webp" alt="" /><span class="bean-dot"></span></div>
+              <div class="static-tabla-cell"><img src="assets/cards/c28.webp" alt="" /></div>
+              <div class="static-tabla-cell"><img src="assets/cards/c35.webp" alt="" /></div>
+              <div class="static-tabla-cell"><img src="assets/cards/c39.webp" alt="" /></div>
+              <div class="static-tabla-cell"><img src="assets/cards/c41.webp" alt="" /></div>
+              <div class="static-tabla-cell marked"><img src="assets/cards/c46.webp" alt="" /><span class="bean-dot"></span></div>
+              <div class="static-tabla-cell"><img src="assets/cards/c47.webp" alt="" /></div>
+              <div class="static-tabla-cell"><img src="assets/cards/c48.webp" alt="" /></div>
+              <div class="static-tabla-cell"><img src="assets/cards/c50.webp" alt="" /></div>
+              <div class="static-tabla-cell"><img src="assets/cards/c51.webp" alt="" /></div>
+              <div class="static-tabla-cell marked"><img src="assets/cards/c54.webp" alt="" /><span class="bean-dot"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-band" id="contacto">
+          <div style="max-width: 580px;">
+            <h3 style="margin:0 0 0.4rem; font-family:var(--font-serif); font-size:1.35rem;" data-i18n="cta_title">Gratis, privada y sin anuncios</h3>
+            <p style="margin:0; color:var(--text-muted); font-size:0.95rem;" data-i18n="cta_body">
+              Actualmente en desarrollo activo para Android e iOS. ¿Tienes comentarios, ideas o quieres probar la beta? Escríbeme directamente.
+            </p>
+          </div>
+          <a class="store-btn" href="mailto:loteria@marcocarrizales.com?subject=Loter%C3%ADa%20Mexicana%20App">
+            <span data-i18n="cta_contact">Enviar mensaje</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Marco Carrizales · Lotería Mexicana</div>
+      <div class="footer-links">
+        <a href="privacy.html" data-i18n="footer_privacy">Política de Privacidad</a>
+        <a href="mailto:loteria@marcocarrizales.com" data-i18n="footer_support">Soporte</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const copy = {
+      es: {
+        nav_features: 'Características',
+        nav_craft: 'Diseño y temas',
+        nav_privacy: 'Privacidad',
+        eyebrow: 'Android & iOS · 100% Offline · Sin anuncios',
+        hero_title: 'Tu gritón y tus tablas, siempre listos en la mesa.',
+        hero_lead: 'Barajeo tradicional de las 54 cartas con voz cantada, Cover Flow 3D y tablas digitales. Conéctala a una bocina, apaga la pantalla y disfruta la partida sin interrupciones.',
+        hero_quote: '“La lotería es parte de la cultura popular mexicana ya que refleja nuestras costumbres, creencias y tradiciones.”',
+        coming_soon: 'Próximamente en',
+        pill_offline: 'Funciona sin internet',
+        pill_screenoff: 'Audio con pantalla apagada',
+        pill_free: 'Gratis y sin publicidad',
+        feat_heading: 'Hecha para jugar como en casa, con cuidado en cada detalle',
+        feat_sub: 'Diseñada desde cero para reuniones familiares: rápida de operar sobre la mesa, legible a distancia y respetuosa con tu privacidad.',
+        f1_title: 'Gritón automático y manual',
+        f1_body: 'Barajea las 54 cartas sin repeticiones. Ajusta el ritmo de 2.5s a 15s o cambia a modo Manual; la app siempre termina de cantar cada carta antes de iniciar la cuenta regresiva.',
+        f2_title: 'Modo silencio y verificación rápida',
+        f2_body: 'Silencia la voz al instante cuando alguien en la mesa quiere gritar las cartas. Si alguien grita “¡Lotería!”, abre la cuadrícula ordenada del #1 al #54 para verificar en segundos.',
+        f3_title: 'Offline y con pantalla apagada',
+        f3_body: 'No requiere internet ni cuentas. Continúa cantando cartas con la pantalla bloqueada y guarda tu partida automáticamente si cierras la app por accidente.',
+        f4_title: 'Tablas digitales con marcadores reales',
+        f4_body: 'Genera de 1 a 4 tablas aleatorias de 4×4 y márcalas manualmente con frijoles, corcholatas, piedritas o monedas de 10¢ mientras el gritón sigue corriendo.',
+        f5_title: 'Adaptada a cualquier pantalla',
+        f5_body: 'Pensada para teléfonos, dispositivos plegables, tablets y ventanas redimensionables — incluyendo vista dividida de Baraja y Tablas en pantallas grandes.',
+        f6_title: 'Español, English y Bilingüe',
+        f6_body: 'Ideal para familias y reuniones bilingües: canta las cartas en español tradicional, en inglés o en modo bilingüe directamente desde Ajustes.',
+        craft_title: '9 temas inspirados en México y 4 marcadores tradicionales',
+        craft_body: 'De Papel de Algodón y Barragán hasta Barro Negro, Talavera y Cempasúchil. La interfaz se mantiene limpia y moderna para que el arte clásico de las cartas y tus tablas sean siempre los protagonistas.',
+        cta_title: 'Gratis, privada y sin anuncios',
+        cta_body: 'Actualmente en desarrollo activo para Android e iOS. ¿Tienes comentarios, ideas o quieres probar la beta? Escríbeme directamente.',
+        cta_contact: 'Enviar mensaje',
+        footer_privacy: 'Política de Privacidad',
+        footer_support: 'Soporte'
+      },
+      en: {
+        nav_features: 'Features',
+        nav_craft: 'Design & Themes',
+        nav_privacy: 'Privacy',
+        eyebrow: 'Android & iOS · 100% Offline · Ad-Free',
+        hero_title: 'Your Lotería caller and digital boards, ready for every table.',
+        hero_lead: 'Traditional 54-card shuffling with voice calling, 3D Cover Flow, and digital tablas. Pair with a speaker, lock your screen, and keep the round going smoothly.',
+        hero_quote: '“Lotería is part of Mexican popular culture, reflecting our customs, stories, and shared traditions.”',
+        coming_soon: 'Coming soon on',
+        pill_offline: 'Works 100% offline',
+        pill_screenoff: 'Screen-off voice calling',
+        pill_free: 'Free & zero ads',
+        feat_heading: 'Built for real family tables, with care in every detail',
+        feat_sub: 'Designed from the ground up for game night: effortless to control from across the table, easy to verify, and respectful of your privacy.',
+        f1_title: 'Automatic & Manual Caller',
+        f1_body: 'Shuffles all 54 cards with zero repeats. Pick a pace from 2.5s to 15s or switch to Manual mode—speech always finishes cleanly before the countdown starts.',
+        f2_title: 'Mute Mode & Instant Verification',
+        f2_body: 'Mute the voice instantly when someone at the table wants to call the cards. When someone shouts “¡Lotería!”, open the #1–54 grid to verify their tabla in seconds.',
+        f3_title: 'Offline & Screen-Off Continuity',
+        f3_body: 'No internet or sign-in required. Keeps calling cards even with your screen locked and automatically restores your session if the app closes.',
+        f4_title: 'Digital Tablas & Authentic Markers',
+        f4_body: 'Play 1 to 4 random 4×4 boards at once and mark manually with frijoles, soda caps (corcholatas), river pebbles, or 10¢ Mexican coins while the caller runs.',
+        f5_title: 'Adaptive on Every Screen',
+        f5_body: 'Built for phones, foldables, tablets, and resizable windows—including side-by-side Deck and Tablas split view on large displays.',
+        f6_title: 'Spanish, English & Bilingual Voice',
+        f6_body: 'Great for bilingual families and gatherings: call cards in traditional Spanish, English, or Bilingual mode right from Settings.',
+        craft_title: '9 Mexican-inspired themes & 4 traditional markers',
+        craft_body: 'From Papel de Algodón and Barragán to Barro Negro, Talavera, and Cempasúchil. Clean, modern chrome lets the classic folk artwork and your tablas shine.',
+        cta_title: 'Free, private, and ad-free',
+        cta_body: 'Currently in active development for Android and iOS. Have feedback, ideas, or want to join the beta? Reach out directly.',
+        cta_contact: 'Get in touch',
+        footer_privacy: 'Privacy Policy',
+        footer_support: 'Support'
+      }
+    };
+
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (copy[lang][key]) el.textContent = copy[lang][key];
+      });
+    }
+
+    const initial = (navigator.language || 'es').toLowerCase().startsWith('en') ? 'en' : 'es';
+    setLang(initial);
+  </script>
+</body>
+</html>
